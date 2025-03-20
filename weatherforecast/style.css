@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6A0572, #C2185B);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherapp {
+    margin: 50px auto;
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #C2185B;
+    border-radius: 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-button {
+    border-radius: 10px;
+    padding: 8px 15px;
+    background-color: #FFC107;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #FF9800;
+    transform: scale(1.05);
+}
+
+.city {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.temperature .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    gap: 10px;
+    color: #555;
+}
+
+.temperature .temp-info {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.wind-info, .humidity-info, .visibility-info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 120px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.additional-info .material-icons {
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+.wind-info div, .humidity-info div, .visibility-info div {
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #D32F2F;
+}
